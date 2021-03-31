@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MyClass {
+
+    public static void main(String arg[])
+    {
+        float r = 0;
+        float h = 0;
+        double V = 0;
+        double S = 0;
+
+        Scanner scan = new Scanner(System.in);
+
+        while (true)
+        {
+            r = scan.nextFloat();
+            h = scan.nextFloat();
+
+            if (r > 0 && h > 0) break;
+
+            System.out.println("Values must be bigger than 0");
+        }
+
+        V = Math.PI * (r * r) * h;
+        S = Math.PI * (r * r);
+
+        System.out.println(S);
+        System.out.println(V);
+    }
+}
