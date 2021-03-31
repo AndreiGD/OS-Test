@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, char *argv[])
+{
+	float r = *argv[1];
+	float h = *argv[2];
+	double V = 0;
+	double S = 0;
+
+	if (r <= 0 || h <= 0) { printf("Values must be bigger than 0"); return 0;}
+
+	V = 3.14 * (r * r) * h;
+	S = 3.14 * (r * r);
+
+	printf("S: %d\n", S);
+	printf("V: %d\n", V);
+
+	return 0;
+} 
